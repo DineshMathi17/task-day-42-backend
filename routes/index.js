@@ -63,7 +63,7 @@ router.get('/:id', async(req, res)=> {
   }
 });
 
-router.put('/:id',async(req,res)=>{
+router.put('/Updated/:id',async(req,res)=>{
   try {
     let user = await UserModel.findOne({_id:req.params.id})
     if(user)
@@ -91,7 +91,7 @@ router.put('/:id',async(req,res)=>{
   }
 })
 
-router.delete('/:id',async(req,res)=>{
+router.delete('/delete/:id',async(req,res)=>{
   try {
     let user = await UserModel.findOne({_id:req.params.id})
     if(user)
