@@ -63,7 +63,7 @@ router.get('/:id', async(req, res)=> {
   }
 });
 
-router.put('/Updated/:id',async(req,res)=>{
+router.put('/updated/:id',async(req,res)=>{
   try {
     let user = await UserModel.findOne({_id:req.params.id})
     if(user)
