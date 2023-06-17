@@ -70,7 +70,8 @@ router.put('/updated/:id',async(req,res)=>{
     {
       user.name = req.body.name
       user.email = req.body.email
-      user.password = req.body.password
+      user.standard = req.body.standard
+      user.age = req.body.age
 
       await user.save()
 
