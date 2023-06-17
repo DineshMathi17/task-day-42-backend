@@ -76,6 +76,7 @@ router.put('/updated/:id',async(req,res)=>{
       await user.save()
 
       res.status(200).send({
+        user,
         message:"User Updated Successfully!"
       })
     }
